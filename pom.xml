@@ -176,13 +176,13 @@
 		
 <distributionManagement>
     <repository>
-      <id>spring-boot-liquibase-release</id>
-      <name>spring-boot-liquibase-release</name>
+      <id>swagger-petstore-release</id>
+      <name>swagger-petstore-release</name>
       <url>http://54.188.116.84:8081/repository/swagger-petstore-release/</url>
     </repository>
     <snapshotRepository>
-      <id>spring-boot-liquibase-snapshot</id>
-      <name>spring-boot-liquibase-snapshot</name>
+      <id>swagger-petstore-snapshot</id>
+      <name>swagger-petstore-snapshot</name>
       <url>http://54.188.116.84:8081/repository/swagger-petstore-snapshot/</url>
     </snapshotRepository>
   </distributionManagement>
