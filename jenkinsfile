@@ -64,7 +64,7 @@ pipeline {
                 }
         }
 
-        stage("mvn build") {
+        stage("Nexus Package build") {
             steps {
                 script {
                     // If you are using Windows then you should use "bat" step
@@ -120,9 +120,7 @@ pipeline {
                     }
                 }
             }
-            
-
-        
+                    
 }
          stage('Approval') {
             // no agent, so executors are not used up when waiting for approvals
