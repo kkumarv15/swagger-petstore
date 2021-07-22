@@ -155,6 +155,40 @@
             </plugin>
         </plugins>
     </build>
+	<profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>http://54.188.116.84:9000/</sonar.host.url>
+	
+
+	
+ <sonar.jdbc.url>your database URL</sonar.jdbc.url>
+<sonar.jdbc.driver>Your database driver</sonar.jdbc.driver>
+<sonar.jdbc.username>admin</sonar.jdbc.username>
+<sonar.jdbc.password>admin</sonar.jdbc.password>               
+
+            </properties>	
+		
+<distributionManagement>
+    <repository>
+      <id>spring-boot-liquibase-release</id>
+      <name>spring-boot-liquibase-release</name>
+      <url>http://54.188.116.84:8081/repository/swagger-petstore-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>spring-boot-liquibase-snapshot</id>
+      <name>spring-boot-liquibase-snapshot</name>
+      <url>http://54.188.116.84:8081/repository/swagger-petstore-snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
+		
+ </profile>
+      </profiles>
     <dependencies>
 
         <dependency>
