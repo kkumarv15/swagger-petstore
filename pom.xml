@@ -175,19 +175,6 @@
 
             </properties>	
 		
-<distributionManagement>
-    <repository>
-      <id>swagger-petstore-release</id>
-      <name>swagger-petstore-release</name>
-      <url>http://54.188.116.84:8081/repository/swagger-petstore-release/</url>
-    </repository>
-    <snapshotRepository>
-      <id>swagger-petstore-snapshot</id>
-      <name>swagger-petstore-snapshot</name>
-      <url>http://54.188.116.84:8081/repository/swagger-petstore-snapshot/</url>
-    </snapshotRepository>
-  </distributionManagement>
-		
 		
  </profile>
       </profiles>
@@ -243,15 +230,18 @@
     <type>pom</type>
         </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>sonatype-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+   <distributionManagement>
+    <repository>
+      <id>swagger-petstore-release</id>
+      <name>swagger-petstore-release</name>
+      <url>http://54.188.116.84:8081/repository/swagger-petstore-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>swagger-petstore-snapshot</id>
+      <name>swagger-petstore-snapshot</name>
+      <url>http://54.188.116.84:8081/repository/swagger-petstore-snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
     <properties>
         <maven-plugin-version>1.0.0</maven-plugin-version>
         <swagger-parser-version>2.0.27</swagger-parser-version>
