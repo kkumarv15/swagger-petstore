@@ -19,6 +19,7 @@
         <defaultGoal>install</defaultGoal>
         <directory>target</directory>
         <finalName>${project.artifactId}-${project.version}</finalName>
+	<jacoco-maven-plugin.version>0.7.4.201502262128</jacoco-maven-plugin.version>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -154,7 +155,6 @@
                     </execution>
                 </executions>
             </plugin>
-	    <jacoco-maven-plugin.version>0.7.4.201502262128</jacoco-maven-plugin.version>
 	    <plugin>
                <groupId>org.jacoco</groupId>
                <artifactId>jacoco-maven-plugin</artifactId>
