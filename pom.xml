@@ -19,8 +19,7 @@
         <defaultGoal>install</defaultGoal>
         <directory>target</directory>
         <finalName>${project.artifactId}-${project.version}</finalName>
-	<jacoco-maven-plugin.version>0.7.4.201502262128</jacoco-maven-plugin.version>
-        <plugins>
+	<plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.5</version>
@@ -158,7 +157,7 @@
 	    <plugin>
                <groupId>org.jacoco</groupId>
                <artifactId>jacoco-maven-plugin</artifactId>
-               <version>${jacoco-maven-plugin.version}</version>
+               <version>0.7.4.201502262128</version>
                <executions>
                 <execution>
                 <id>default-prepare-agent</id>
