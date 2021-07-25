@@ -154,8 +154,8 @@
                     </execution>
                 </executions>
             </plugin>
+	    <jacoco-maven-plugin.version>0.7.4.201502262128</jacoco-maven-plugin.version>
 	    <plugin>
-		<jacoco-maven-plugin.version>0.7.4.201502262128</jacoco-maven-plugin.version>
                <groupId>org.jacoco</groupId>
                <artifactId>jacoco-maven-plugin</artifactId>
                <version>${jacoco-maven-plugin.version}</version>
