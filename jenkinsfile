@@ -56,7 +56,12 @@ pipeline {
                junit  'target/surefire-reports/**/*.xml'
               }
          }
-         
+       stage('JaCoCo') {
+            steps {
+                echo 'Code Coverage'
+                jacoco()
+            }
+        }
         stage('SonarQube Analysis') {
             steps {
         
