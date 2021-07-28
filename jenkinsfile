@@ -145,11 +145,10 @@ pipeline {
                 echo 'Deploying...'
                 }
             }
-         node {
+   
     stage("speak") {
        slackSend channel: 'zensardemolab', message: 'Pipeline Job Completed'
     }
-}
         }
      
      
