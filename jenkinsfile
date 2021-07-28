@@ -145,11 +145,6 @@ pipeline {
                 echo 'Deploying...'
                 }
             }
-   
-    stage("speak") {
-       slackSend channel: 'zensardemolab', message: 'Pipeline Job Completed'
-    }
-        }
      
      
   /*     post {
