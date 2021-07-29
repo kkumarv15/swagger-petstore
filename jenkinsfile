@@ -163,8 +163,7 @@ pipeline {
 
         stage ('Starting jetty server and swagger ') {
        steps {
-    /*     build job: 'Install_springbootliquibase_App' */
-         sh 'mvn jetty:run'
+       sh 'mvn jetty:run'
   }
 }
         
